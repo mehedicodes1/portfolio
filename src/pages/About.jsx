@@ -2,7 +2,7 @@ import "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faUserGraduate } from "@fortawesome/free-solid-svg-icons";
 import { faBriefcase } from "@fortawesome/free-solid-svg-icons";
-import { Frontend, Backend } from "../components/Skills";
+import { Frontend, Backend, other, devops } from "../components/Skills";
 import { RevealOnScroll } from "../components/OnScroll";
 
 export const About = () => {
@@ -62,6 +62,41 @@ export const About = () => {
                   ))}
                 </div>
               </div>
+
+              {/* Others skills */}
+              <div className="rounded-xl p-6 hover:-translate-y-1 transition-all">
+                <h3 className="text-xl font-bold mb-4"> Others</h3>
+
+                <div className="flex flex-wrap gap-2">
+                  {other.map((tech, key) => (
+                    <span
+                      key={key}
+                      className="bg-blue-500/10 text-blue-500 py-1 px-3 rounded-full text-sm hover:bg-blue-500/20 
+                                                                    hover:shadow-[0_2px_8px_rgba(59,130,246,0.2)] transition
+                                    "
+                    >
+                      {tech}
+                    </span>
+                  ))}
+                </div>
+              </div>
+              {/* DevOps skills */}
+              <div className="rounded-xl p-6 hover:-translate-y-1 transition-all">
+                <h3 className="text-xl font-bold mb-4"> DevOps</h3>
+
+                <div className="flex flex-wrap gap-2">
+                  {devops.map((tech, key) => (
+                    <span
+                      key={key}
+                      className="bg-blue-500/10 text-blue-500 py-1 px-3 rounded-full text-sm hover:bg-blue-500/20 
+                                                                    hover:shadow-[0_2px_8px_rgba(59,130,246,0.2)] transition
+                                    "
+                    >
+                      {tech}
+                    </span>
+                  ))}
+                </div>
+              </div>
             </div>
           </div>
 
@@ -76,12 +111,24 @@ export const About = () => {
               </h3>
               <ul className="list-disc list-inside text-gray-300 space-y-2">
                 <li>
-                  <strong> B.S. in Computer Science </strong> - XYZ University
-                  (2016-2020)
+                  <strong> Diploma In Computer Science And Engineering </strong>{" "}
+                  - Munshigonj Polytechnic Institute (2020-2024)
                 </li>
                 <li>
-                  Relevant Coursework: Data Structures, Web Development, Cloud
-                  Computing...
+                  <strong>
+                    Secondary School Certificate (SSC), Electrical Technology{" "}
+                  </strong>{" "}
+                  - Munshiganj Technical School And College (2018-2020)
+                </li>
+                <li>
+                  Relevant Coursework: The Complete 2024 Web Development
+                  Bootcamp{" "}
+                  <a
+                    className="text-blue-500"
+                    href="https://www.udemy.com/certificate/UC-0e923279-689c-4020-be98-edc54e4822eb/"
+                  >
+                    Open ⇗
+                  </a>
                 </li>
               </ul>
             </div>
@@ -97,22 +144,23 @@ export const About = () => {
                 <div>
                   <h4 className="font-semibold">
                     {" "}
-                    Software Engineer at ABC Corp (2020 - Present){" "}
+                    Software Engineer at Sondhan INC. (2022){" "}
                   </h4>
                   <p>
-                    Developed and maintained microservices for cloud-based
-                    applications.
+                    Developed and maintained web applications using React,
+                    Node.js, and MongoDB. Collaborated with cross-functional
+                    teams to define, design, and ship new features.
                   </p>
                 </div>
 
                 <div>
                   <h4 className="font-semibold">
                     {" "}
-                    Intern at DEF Startups (2019){" "}
+                    Full-Stack Developer at Soker .COM (2019){" "}
                   </h4>
                   <p>
-                    Assisted in building front-end components and integration
-                    REST APIs
+                    Managed website and app development projects, ensuring
+                    timely delivery and high-quality standards.
                   </p>
                 </div>
               </div>
